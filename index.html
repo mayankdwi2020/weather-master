@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="/images/cloudy.png">
+    <script src="/js/actions.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="primary-font-color">
+    <!-- Navigation Starts-->
+    <nav class="primary-bg-color">
+        <div class="nav-wrapper container dp-fx fx-sa">
+            <a href="#">Home</a>
+        </div>
+    </nav>
+    <!-- Navigation Ends-->
+    <h1 class="tx-center">The Weather Project</h1>
+    <form class="tx-center dp-fx fx-c">
+      <input type="search" name="search" id="inputSearch" placeholder="Enter your city" class="white-font-color primary-bg-color"/>
+      <button class="white-font-color primary-bg-color">Go</button>
+    </form>
+    <!-- Main Starts -->
+    <main class="tx-center dp-none container">
+      <!-- Weather Images Start -->
+      <section class="weather-images">
+        <figure>
+          <img src="/images/day.png" alt="" id="imgUpdate"/>
+        </figure>
+      </section>
+      <!-- Weather Images End -->
+      <!-- Weather Details Start -->
+      <section class="weather-details container">
+          <div class="weather-details-wrapper">
+              <h2></h2>
+            <h3></h3>
+            <!-- <p data-weather-type class="wd-status">Raining</p> -->
+            <div class="dp-fx fx-c ai-c">
+                <p data-temp-current class="wd-temp"></p><span data-temp-c>℃</span><img src="/images/cold.png" alt="" id="tempImage">
+            </div>
+          </div>
+        
+        
+      </section>
+      <!-- Weather Details End -->
+    </main>
+    <!-- Main Ends -->
+    <!-- Footer Starts -->
+    <footer class="tx-center primary-bg-color">
+        <h4 class="white-font-color">Made with <img src="/images/heart.png" alt="" class="small-img"> from Mayank</h4>
+    </footer>
+    <!-- Footer Ends -->
+
+  </body>
+</html>
